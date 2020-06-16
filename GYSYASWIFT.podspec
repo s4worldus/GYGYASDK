@@ -8,7 +8,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "GYSYASWIFT"
-  spec.version      = "0.0.15"
+  spec.version      = "0.0.16"
   spec.summary      = " GYSYASWIFT."
   spec.description  = "wrapper how to use gigya sdk"
   spec.homepage     = "https://github.com/s4worldus/GYGYASDK.git"
@@ -29,6 +29,4 @@ Pod::Spec.new do |spec|
   # spec.dependency "JSONKit", "~> 1.4"
 spec.static_framework = true
 spec.dependency 'GoogleSignIn'
-spec.dependency 'FBSDKLoginKit'
-spec.dependency 'FBSDKCoreKit'
 end
