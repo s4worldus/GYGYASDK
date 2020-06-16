@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "GYSYASWIFT"
-  spec.version      = "0.0.9"
+  spec.version      = "0.0.11"
   spec.summary      = "A short description of GYSYASWIFT."
 
   # This description is used to generate tags and improve search results.
@@ -85,7 +85,7 @@ Pod::Spec.new do |spec|
   #  Not including the public_header_files will make all headers public.
   #
 
-  spec.source_files = "GYSYASWIFT/**/*.{swift}"
+  spec.source_files = "GigyaProviders/*.{swift}"
   #spec.exclude_files = "Classes/Exclude"
 
   # spec.public_header_files = "Classes/**/*.h"
@@ -111,12 +111,12 @@ Pod::Spec.new do |spec|
   #  the lib prefix of their name.
   #
 
-  # spec.framework  = "SomeFramework"
+  spec.framework  = "Gigya"
   # spec.frameworks = "SomeFramework", "AnotherFramework"
 
   # spec.library   = "iconv"
   # spec.libraries = "iconv", "xml2"
-  spec.swift_version         = "5.2"
+  spec.swift_version         = "5.1.2"
 spec.static_framework = true
   # ――― Project Settings ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
@@ -129,7 +129,7 @@ spec.static_framework = true
   # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # spec.dependency "JSONKit", "~> 1.4"
 
-#spec.dependency 'GoogleSignIn'
+spec.dependency 'GoogleSignIn'
 spec.dependency 'FBSDKLoginKit'
 spec.dependency 'FBSDKCoreKit'
 end
