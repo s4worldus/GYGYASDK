@@ -5,17 +5,18 @@
 #  To learn more about Podspec attributes see https://guides.cocoapods.org/syntax/podspec.html
 #  To see working Podspecs in the CocoaPods repo see https://github.com/CocoaPods/Specs/
 #
-
+source 'https://gitlab.solocal.com/media/applications-mobiles/pagesjaunes/iOS-PJPods.git'
+source 'https://github.com/CocoaPods/Specs.git'
 Pod::Spec.new do |spec|
 
   spec.name         = "GYSYASWIFT"
-  spec.version      = "0.0.13"
+  spec.version      = "0.0.14"
   spec.summary      = " GYSYASWIFT."
   spec.description  = "wrapper how to use gigya sdk"
   spec.homepage     = "https://github.com/s4worldus/GYGYASDK.git"
   spec.license      = { :type => "MIT", :file => "~/Library/GYSYSSWIFT/license.md" }
   spec.author    = "sdks-team@gigya-inc.com"
-  spec.platform     = :ios
+  spec.platform     = :ios, "12.0"
   spec.source       = { :git => "https://github.com/s4worldus/GYGYASDK.git", :tag => "#{spec.version}" }
   spec.source_files = "GigyaProviders/*.{swift}"
   #spec.exclude_files = "Classes/Exclude"
@@ -23,7 +24,7 @@ Pod::Spec.new do |spec|
 
   # spec.library   = "iconv"
   # spec.libraries = "iconv", "xml2"
-  # spec.swift_version         = "5.1.2"
+  spec.swift_version         = "5.1.2"
   # spec.requires_arc = true
 
   # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
