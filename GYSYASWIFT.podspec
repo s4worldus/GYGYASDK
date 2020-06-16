@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "GYSYASWIFT"
-  spec.version      = "0.0.3"
+  spec.version      = "0.0.4"
   spec.summary      = "A short description of GYSYASWIFT."
 
   # This description is used to generate tags and improve search results.
@@ -84,8 +84,8 @@ Pod::Spec.new do |spec|
   #  For header files it will include any header in the folder.
   #  Not including the public_header_files will make all headers public.
   #
-
-  spec.source_files  = "Classes", "Classes/**/*.{h,m, swift}"
+  spec.source_files  = 'Classes/*.{h,m,swift}'
+  #spec.source_files  = "Classes", "Classes/**/*.{h,m, swift}"
   #spec.exclude_files = "Classes/Exclude"
 
   # spec.public_header_files = "Classes/**/*.h"
