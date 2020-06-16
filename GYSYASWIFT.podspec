@@ -9,7 +9,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "GYSYASWIFT"
-  spec.version      = "0.0.12"
+  spec.version      = "0.0.13"
   spec.summary      = " GYSYASWIFT."
   spec.description  = "wrapper how to use gigya sdk"
   spec.homepage     = "https://github.com/s4worldus/GYGYASDK.git"
@@ -19,7 +19,7 @@ Pod::Spec.new do |spec|
   spec.source       = { :git => "https://github.com/s4worldus/GYGYASDK.git", :tag => "#{spec.version}" }
   spec.source_files = "GigyaProviders/*.{swift}"
   #spec.exclude_files = "Classes/Exclude"
-  spec.frameworks = "Gigya.framework", "GoogleSignIn.framework"
+  spec.frameworks = "Gigya", "GoogleSignIn"
 
   # spec.library   = "iconv"
   # spec.libraries = "iconv", "xml2"
